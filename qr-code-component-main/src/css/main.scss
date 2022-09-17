@@ -1,0 +1,40 @@
+@import '_base';
+@import '_variables';
+
+.container {
+  width: 300px;
+  background-color: $--primary-color-white ;
+  padding: 14px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .description {
+    text-align: center;   
+    padding: 18px;
+    h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      margin-bottom: 14px;
+      font-weight: 700;
+      color: $--secondary-color-dark-blue;
+    }
+
+    p {
+      font-size: 15px;
+      color: $--secondary-color-grayish-blue;
+    }
+  }
+}
+
+@media (max-width:375 ){
+  .container{
+    width: 90%;
+  } 
+}
